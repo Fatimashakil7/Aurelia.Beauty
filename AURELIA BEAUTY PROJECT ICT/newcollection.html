@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+   <header>
+<p  id="discount-line">
+Get <strong>20% off</strong> on your first purchase 💖
+</p>
+<!-- NAVBAR -->
+<nav>
+
+<div class="row2">
+  <i class="fa-solid fa-bars toggle-btn" onclick="toggleMenu()"></i> 
+  <a href="index.html" class="brand-logo">
+    <img src="./assets/logo_final_1-removebg-preview.png" alt="logo">
+</a>
+</div>
+
+
+<div class="row3" id="menuRow">
+
+  <!-- LEFT: NAV LINKS -->
+  <div class="nav-links">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="contact.html">CONTACT US</a>
+
+    <select id="shop-menu">
+      <option value="">SELECT PRODUCT CATEGORY:</option>
+      <option value="bestsellers.html">Best Sellers</option>
+      <option value="skincaresets.html">Skincare Sets</option>
+      <option value="essentials.html">Essentials</option>
+    </select>
+
+   <a href="index.html#howItWorks">HOW IT WORKS</a>
+    <a href="faq.html">FAQ</a>
+    <a id="skinquiz" href="skinquiz.html">SKIN QUIZ</a>
+  </div>
+
+  <!-- RIGHT: SEARCH + USER -->
+    <div class="right-icons">
+    <div class="search-container">
+  <input type="text" id="search" placeholder="Search Category Here">
+  <button id="search-btn">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+  <div id="suggestions"></div>
+</div>
+
+    <a href="signup.html" class="nav-user">
+      <i class="fa-solid fa-user"></i>
+    </a>
+</div>
+</div>
+</header> 
+
+    <main class="new-collection">
+    <h1>New Collection</h1>
+    <section class="product">
+        <div class="product-card">
+            <img src="./assets/Purify Gel Cleanser.jpeg" height="300" alt="New Product">
+            <h2>Aurelia Purify Gel Cleanser</h2>
+            <h4>Description:</h4>
+            <h4>A refreshing, lightweight gel cleanser that controls excess oil and minimizes pores with tea tree and salicylic acid.</h4>
+            <h3>Rs. 1,799</h3>
+            <p></p>
+        </div>
+
+        <div class="product-card">
+            <img src="./assets/Gentle Soothe Cleanser.jpeg" height="300" alt="New Product">
+            <h2>Aurelia Gentle Soothe Cleanser</h2>
+            <h4>Description:</h4>
+             <h4>A refreshing, lightweight gel cleanser that controls excess oil and minimizes pores with tea tree and salicylic acid.</h4>
+            <h3>Rs. 1,589</h3>
+            <p></p>
+        </div>
+
+        <div class="product-card">
+            <img src="./assets/Sensitive Spot Calmer.jpeg" height="300" alt="New Product">
+            <h2>Aurelia Sensitive Spot Calmer</h2>
+            <h4>Description:</h4>
+            <h4>A refreshing, lightweight gel cleanser that controls excess oil and minimizes pores with tea tree and salicylic acid.</h4>
+              <h3>Rs. 2,200</h3>
+            <p></p>
+        </div>
+ 
+        <div class="product-card">
+            <img src="./assets/skincare set 2.jpeg" height="300" alt="New Collection">
+            <h2>Aurelia Clear Skin Set</h2>
+            <h3>(Rs. 3,599)</h3>
+            <h4>Description</h4>
+            <p>For Oily/acne-prone skin.<br>
+            Key ingredients: Plant extracts, clinically-tested actives, and nourishing botanicals.</p>
+            Includes:
+        <ul>
+            <li>Purify Gel Cleanser (200ml)<br></li>
+            <li>Clear Spot Treatment (15ml)<br></li>
+            <li>Balance Mattifying Moisturizer (50g)</li>
+        </ul>
+        </div>
+
+    </section>
+</main>
+<!-- FOOTER -->
+<footer>
+ <div class="footer-links">
+  <p>© 2025 Aurelia Beauty. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+
+  <h3 class="quick-links">Quick Links</h3>
+  <ul>
+  <li><a href="contact.html" target="_blank">CONTACT US</a></li><br>
+  <li><a href="faq.html" target="_blank">FAQ</a></li><br>
+  <li><a href="skinquiz.html" target="_blank">SKIN QUIZ</a></li><br>
+  <li><a href="about.html" target="_blank">ABOUT US</a></li>
+  </ul>
+  
+ <h3 class="join-us ">Join Us On Socials:</h3>
+<div class="socials">
+
+<a href="https://www.facebook.com/profile.php?id=61585460273702" target="_blank" aria-label="Aurelia Beauty on Facebook">
+  <i class="fa-brands fa-facebook-f"></i></a>
+ <a href="https://www.instagram.com/aurelia_beauty98/" target="_blank">
+<i class="fa-brands fa-instagram"></i></a>
+
+</div>
+
+</footer>
+<script>
+function toggleMenu() {
+    document.getElementById("menuRow").classList.toggle("show-menu");
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+

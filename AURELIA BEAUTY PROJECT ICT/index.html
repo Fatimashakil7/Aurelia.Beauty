@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurelia Beauty</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+  <header>
+<p  id="discount-line">
+Get <strong>20% off</strong> on your first purchase 💖
+</p>
+<!-- NAVBAR -->
+<nav>
+
+<div class="row2">
+  <i class="fa-solid fa-bars toggle-btn" onclick="toggleMenu()"></i> 
+  <a href="index.html" class="brand-logo">
+    <img src="./assets/logo_final_1-removebg-preview.png" alt="logo">
+  </a>
+</div>
+
+
+<div class="row3" id="menuRow">
+
+  <!-- LEFT: NAV LINKS -->
+  <div class="nav-links">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="contact.html">CONTACT US</a>
+
+    <select id="shop-menu">
+      <option value="">SELECT PRODUCT CATEGORY:</option>
+      <option value="bestsellers.html">Best Sellers</option>
+      <option value="skincaresets.html">Skincare Sets</option>
+      <option value="essentials.html">Essentials</option>
+    </select>
+
+    <a href="index.html#howItWorks">HOW IT WORKS</a>
+
+    <a href="faq.html">FAQ</a>
+    <a id="skinquiz" href="skinquiz.html">SKIN QUIZ</a>
+  </div>
+
+  <!-- RIGHT: SEARCH + USER -->
+  <div class="right-icons">
+    <div class="search-container">
+  <input type="text" id="search" placeholder="Search Category Here">
+  <button id="search-btn">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+  <div id="suggestions"></div>
+</div>
+
+    <a href="signup.html" class="nav-user">
+      <i class="fa-solid fa-user"></i>
+    </a>
+</div>
+</div>
+</header> 
+<main>
+   <!-- Welcome Page Section -->
+   <section class="welcome-page">
+   <div class="welcome-container">
+   
+    <div class="welcome-image">
+      <img src="assets/skincare-products.jpg" alt="Skincare Products">
+    </div>
+   
+    <div class="welcome-text">
+      <h1>Welcome to Aurelia Beauty</h1>
+      <p>
+        Experience the power of nature with our luxurious skincare,
+        designed to nourish and enhance your natural radiance.
+        Discover effective, clean beauty for a glowing complexion.
+      </p>
+      <a href="about.html#ourMission" class="btn">OUR MISSION</a>
+    </div>
+
+  </div>
+</section>
+<!-- New Collection Section -->
+<section class="collection-hero">
+  <div class="collection-overlay">
+    <div class="collection-content">
+      <span class="collection-tagline">SKINCARE SOLUTION</span>
+      <h1 class="collection-heading">
+        FOR A BETTER YOU,<br> TODAY & ALWAYS
+      </h1>
+      <p class="collection-subtext">
+        <a class="white-text"  href="newcollection.html">NEW COLLECTION</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS SECTION -->
+<section id="howItWorks" class="how-works">
+<h2 class="how-title">How It Works</h2>
+<div class="steps-layout">
+
+<div class="step-item">
+      <h3>Step 1: Take a Skin Quiz</h3>
+      <p>Answer a few simple questions to help us understand your skin needs.</p>
+</div>
+
+<div class="step-item">
+      <h3>Step 2: Consultation</h3>
+      <p>Schedule your consultation by contacting us for expert guidance.</p>
+</div>
+
+<div class="step-item">
+      <h3>Step 3: Visit Our Store</h3>
+      <p>Visit our nearby shop to explore products recommended for you.</p>
+</div>
+
+<div class="step-item">
+      <h3>Step 4: Shop Products</h3>
+      <p>Purchase the recommended products and enjoy healthy, glowing skin.</p>
+</div>
+
+</div>
+<!-- GRID SECTION -->
+<div class="simple-grid">
+  <div class="text-side">
+    <p>
+      Starting a skincare routine can be overwhelming.
+      We are here to simplify it and make your skin glow.
+    </p>
+    <a href="#">Start Now</a>
+  </div>
+  <div class="image-side">
+    <img src="assets/grid image.jpeg" alt="Skincare routine">
+  </div>
+</div>
+
+</section>
+</main>
+
+  <!-- FOOTER -->
+<footer>
+ <div class="footer-links">
+  <p>© 2025 Aurelia Beauty. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+
+  <h3 class="quick-links">Quick Links</h3>
+  <ul>
+  <li><a href="contact.html" target="_blank">CONTACT US</a></li><br>
+  <li><a href="faq.html" target="_blank">FAQ</a></li><br>
+  <li><a href="skinquiz.html" target="_blank">SKIN QUIZ</a></li><br>
+  <li><a href="about.html" target="_blank">ABOUT US</a></li>
+  </ul>
+  
+ <h3 class="join-us ">Join Us On Socials:</h3>
+<div class="socials">
+
+<a href="https://www.facebook.com/profile.php?id=61585460273702" target="_blank" aria-label="Aurelia Beauty on Facebook">
+  <i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/aurelia_beauty98/" target="_blank">
+<i class="fa-brands fa-instagram"></i></a>
+
+</div>
+
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menuRow").classList.toggle("show-menu");
+}
+</script>
+ <script src="script.js"></script>
+</body>
+</html>
+
